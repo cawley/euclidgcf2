@@ -1,0 +1,21 @@
+public class Euclid{
+  public static void main(String[] arg){
+    int a = 6;
+    int b = 80;
+    euclid(a,b);
+  }
+  public static void euclid(int a, int b){
+    if(a == b){
+      System.out.println(a);
+    }
+    if(a !=b){
+      if(a > b){
+        a -=b;
+      }
+      if(a < b){
+        b -=a;
+        euclid(a,b);
+      }
+    }
+  }
+}
